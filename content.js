@@ -23,7 +23,7 @@ function drawButton() {
       if (!tokenInput) {
         console.error("Authenticity token not found");
         button.disabled = false;
-        button.textContent = "Start Progress";
+        button.textContent = "Start Task";
         return;
       }
       const authenticity_token = tokenInput.value;
@@ -53,7 +53,7 @@ function drawButton() {
       .catch(error => {
         console.error("Error updating status:", error);
         button.disabled = false;
-        button.textContent = "Start Progress";
+        button.textContent = "Start Task";
         alert("Failed to update issue status. Please try again.");
       });
     });
