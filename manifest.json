@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Redmine In Progress Button",
+  "version": "1.0",
+  "description": "Adds a button to change a Redmine issue status from New to In Progress.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": [
+    "*://*/issues/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/issues/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
